@@ -5,41 +5,40 @@ A* search algorithm with heap (heuristic =Euclidean distance (lat, lon))
 
 pseudocode:
 
-
-   start = node(s) 
+start = node(s) 
    
-   destination = node(t)
+destination = node(t)
 
-   D[v] = inf
+D[v] = inf
    
-   D[s] = 0
+D[s] = 0
 
-   h[v] = Euclidean distance
+h[v] = Euclidean distance
    
-   key[v] = D[v] + h[v]
+key[v] = D[v] + h[v]
 
-   pred[v] = -1
+pred[v] = -1
 
-   new heap
+new heap
 
-   insert all the vertices into heap
+insert all the vertices into heap
 
-   while heap is not empty:
+while heap is not empty:
    
-    popmin as u
+  popmin as u
     
-    if u = t, break
+  if u = t, break
     
-    for all (u,v)
+  for all (u,v)
     
-      Dv = D[u] + w(u,v)
+   Dv = D[u] + w(u,v)
       
-      if Dv < D[v]
+   if Dv < D[v]
       
-        D[v] = Dv
+   D[v] = Dv
         
-        pred[v] = u
+   pred[v] = u
         
-        key[v] = Dv + h(v,t)
+   key[v] = Dv + h(v,t)
         
         Dreasekey(v,Dv)
