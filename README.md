@@ -3,7 +3,7 @@
 
 A* search algorithm with heap (heuristic =Euclidean distance (lat, lon))
 
-pseudocode:
+# pseudocode:
 
 start = node(s) 
    
@@ -41,4 +41,4 @@ while heap is not empty:
         
    key[v] = Dv + h(v,t)
         
-        Dreasekey(v,Dv)
+   Dreasekey(v,Dv)
