@@ -5,6 +5,7 @@ A* search algorithm with heap (heuristic =Euclidean distance (lat, lon))
 
 pseudocode:
 
+'''
    start = node(s) 
    destination = node(t)
 
@@ -30,3 +31,4 @@ pseudocode:
         pred[v] = u
         key[v] = Dv + h(v,t)
         Dreasekey(v,Dv)
+'''
