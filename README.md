@@ -1,9 +1,9 @@
-## a-star-search-with-heap
+# a-star-search-with-heap
 
 
 A* search algorithm with heap (heuristic =Euclidean distance (lat, lon))
 
-# pseudocode:
+## pseudocode:
 
 start = node(s) 
    
