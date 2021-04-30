@@ -25,20 +25,20 @@ insert all the vertices into heap
 
 while heap is not empty:
    
-&nbsp;popmin as u
+&emsp;popmin as u
     
-&nbsp;if u = t, break
+&emsp;if u = t, break
     
-&nbsp;for all (u,v)
+&emsp;for all (u,v)
     
-&nbsp;&nbsp;Dv = D[u] + w(u,v)
+&emsp;&emsp;Dv = D[u] + w(u,v)
       
-&nbsp;&nbsp;if Dv < D[v]
+&emsp;&emsp;if Dv < D[v]
       
-&nbsp;&nbsp;&nbsp;D[v] = Dv
+&emsp;&emsp;&emsp;D[v] = Dv
         
-&nbsp;&nbsp;&nbsp;pred[v] = u
+&emsp;&emsp;&emsp;pred[v] = u
         
-&nbsp;&nbsp;&nbsp;key[v] = Dv + h(v,t)
+&emsp;&emsp;&emsp;key[v] = Dv + h(v,t)
         
-&nbsp;&nbsp;&nbsp;Dreasekey(v,Dv)
+&emsp;&emsp;&emsp;Dreasekey(v,Dv)
